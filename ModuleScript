@@ -1,0 +1,13 @@
+local fruit = {
+	["beenstalk"] = {
+		["price"] = 500,
+		["priceR"] = 60,
+		["minWeight"] = 4 -- kg
+	},
+	["Coconut"] = {
+		["price"] = 150,
+		["priceR"] = 5,
+		["minWeight"] = 10 -- kg
+	},
+}
+return fruit
