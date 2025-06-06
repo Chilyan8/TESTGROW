@@ -1,0 +1,11 @@
+local tool = script.Parent
+local Part = workspace:WaitForChild("Sprinkler")
+
+tool.Activated:Connect(function()
+	local Joueur = game.Players.LocalPlayer
+	local character = Joueur.Character
+	local partiquivastp = character:WaitForChild("HumanoidRootPart")
+	
+	partiquivastp.CFrame = Part.CFrame + Vector3.new(0,3,0)
+	print("bouton activer")
+end)
