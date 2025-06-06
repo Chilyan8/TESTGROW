@@ -1,0 +1,11 @@
+local interagire = script.Parent
+
+interagire.Triggered:Connect(function(player)
+	print("interagiavec")
+			local guidujoueur = player:WaitForChild("PlayerGui")
+			local guidushop = guidujoueur:FindFirstChild("SHOP")
+		if guidushop then
+	print("oui")
+		guidushop.Enabled = not guidushop.Enabled
+	end
+end)
