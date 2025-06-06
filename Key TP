@@ -1,0 +1,13 @@
+local boutton = game:GetService("UserInputService")
+local part = workspace:WaitForChild("TEST")
+local Joueur = game.Players.LocalPlayer
+local character = Joueur.Character
+	
+	
+	
+boutton.InputBegan:Connect(function(key)
+	if key.KeyCode == Enum.KeyCode.Z then
+		character.HumanoidRootPart.CFrame = part.CFrame + Vector3.new(0,5,0)
+			
+	end
+end)
