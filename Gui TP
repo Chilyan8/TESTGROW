@@ -1,0 +1,9 @@
+local Button = script.Parent
+local Part = workspace["Fruit Seller"]:WaitForChild("FruitSpawn")
+local Joueur = game.Players.LocalPlayer
+local character = Joueur.Character
+
+Button.MouseButton1Click:Connect(function()
+	character.HumanoidRootPart.CFrame = Part.CFrame + Vector3.new(0,3,0)
+		
+end)
