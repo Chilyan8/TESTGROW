@@ -1,0 +1,7 @@
+local boutton = script.Parent
+local table = require(game.ReplicatedStorage.module.ModuleScript)
+
+boutton.MouseButton1Click:Connect(function()
+game.ReplicatedStorage.achete:FireServer("beenstalk")
+
+end)
