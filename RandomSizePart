@@ -1,0 +1,10 @@
+local Part = script.Parent
+
+while true do
+	wait(1)
+	local randomX = math.random(0,50)
+	local randomY = math.random(0,50)
+	local randomZ = math.random(0,50)
+	Part.Size = Vector3.new(randomX,randomY,randomZ)
+end
+
