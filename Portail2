@@ -1,0 +1,11 @@
+script.Parent.Touched:Connect(function(hit)	
+	local character = hit.Parent -- Récupère le personnage qui touche la part
+	local TP = workspace.Portail1:WaitForChild("TP1") -- localise la part pour se tp
+
+	print("touched")-- Check si la part se fait toucher
+
+	if hit.Parent == character then
+		character.HumanoidRootPart.CFrame = TP.CFrame + Vector3.new(0,0,-4)
+
+	end
+end)
